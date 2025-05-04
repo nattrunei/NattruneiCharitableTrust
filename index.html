@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nattrunei Charitable Trust</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/nattrunei.jpeg" alt="Nattrunei Logo" class="navbar-logo me-2">
+                Nattrunei Charitable Trust
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#support-causes">Donate To</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="volunteers.html">Volunteers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2 class="text-center mb-5">Welcome to Nattrunei</h2>
+        
+        <div class="row">
+            <div class="col-12 mb-4">
+                <img src="images/nattrunei.jpeg" alt="Nattrunei" style="float: right; width: 200px; height: 200px; object-fit: contain; border-radius: 10px; margin-left: 20px; margin-bottom: 20px;">
+                <div class="banner py-4" style="background: rgba(13, 110, 253, 0.1); border-radius: 10px; padding: 30px;">
+                    <h2 class="mb-4">Our Mission</h2>
+                    <div class="mission-content">
+                        <p class="mb-4" style="font-size: 1.1rem; line-height: 1.6;">Nattrunei Charitable Trust is a beacon of hope and compassion, established with the core mission of uplifting the lives of the underprivileged and bringing meaningful change to society. Rooted in the values of service, empathy, and equality, our trust is committed to providing educational support, medical assistance, and essential aid to those in dire need.</p>
+                        
+                        <p class="mb-4" style="font-size: 1.1rem; line-height: 1.6;">Your contribution can light up a life. Every rupee you donate helps us provide education, medical care, and essential aid to those who need it the most. Together, we can make a lasting impact.</p>
+
+                        <p class="mb-4" style="font-size: 1.1rem; line-height: 1.6;">Join us in our journey of service. Together, we can transform lives—one act of compassion at a time.</p>
+                        
+                        <p class="mb-4" style="font-size: 1.1rem; line-height: 1.6;">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#qrModal">Scan the QR code</a> to contribute and be a part of the change.
+                        </p>
+
+                        <!-- QR Code Modal -->
+                        <div class="modal fade" id="qrModal" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="qrModalLabel">Scan to Donate</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <img src="images/qrcode.jpeg" alt="Donation QR Code" style="max-width: 100%; height: auto;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Donation Section -->
+        <div class="row g-4 mt-5" id="support-causes">
+            <h2 class="text-center mb-4">Support Our Causes</h2>
+            <p class="text-center mb-5">Your contribution can make a real difference in someone's life</p>
+            
+            <!-- Medical Aid -->
+            <div class="col-md-6">
+                <div class="cause-card">
+                    <img src="images/donate/solomon.jpeg" class="card-img-top" alt="Medical Aid">
+                    <div class="card-body">
+                        <h3>Medical Aid</h3>
+                        <p>32-year-old patient who has been bedridden since the age of 16 due to a spinal cord injury from a fall. He is currently suffering from severe bed sores and is in immense pain.</p>
+                        <p>We have committed to covering the cost of his treatment and regular wound care. Anyone who wishes to contribute towards this compassionate cause can do so via the Trust's QR code</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" style="width: 45%"></div>
+                        </div>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#qrModal">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
