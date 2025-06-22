@@ -26,6 +26,28 @@
             color: #ffffff !important;
             background-color: #2C1810 !important;
         }
+        .cause-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .cause-card .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .cause-card .card-body button {
+            margin-top: auto;
+        }
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -114,6 +136,25 @@
                         <h3>Medical Aid</h3>
                         <p>32-year-old patient who has been bedridden since the age of 16 due to a spinal cord injury from a fall. He is currently suffering from severe bed sores and is in immense pain.</p>
                         <p>We have committed to covering the cost of his treatment and regular wound care. Anyone who wishes to contribute towards this compassionate cause can do so via the Trust's QR code</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" style="width: 45%"></div>
+                        </div>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#qrModal">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Heart Stroke Patient -->
+            <div class="col-md-6">
+                <div class="cause-card">
+                    <video class="card-img-top" controls>
+                        <source src="videos/madhuhelp.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="card-body">
+                        <h3>Support Madhu</h3>
+                        <p>Madhu, a heart stroke patient, requires immediate medical attention and ongoing care. The sudden onset of this condition has left the family in need of financial support for treatment and rehabilitation.</p>
+                        <p>Every contribution, big or small, will go directly toward their treatment and recovery. If you’re unable to donate, your prayers and sharing this fundraiser with others will mean the world to us.</p>
                         <div class="progress mb-3">
                             <div class="progress-bar" role="progressbar" style="width: 45%"></div>
                         </div>
